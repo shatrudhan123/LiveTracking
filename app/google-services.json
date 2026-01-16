@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1009249502066",
+    "project_id": "livetracking-8dc63",
+    "storage_bucket": "livetracking-8dc63.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009249502066:android:60b5c1d0834950a4f8d3eb",
+        "android_client_info": {
+          "package_name": "com.example.livetracking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJhzddfUYyKXUTtHt_r-bEaLo6CRNHjJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

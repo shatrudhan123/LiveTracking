@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".dashboard.Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="#F5F5F5"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp">
+
+
+
+                <TextView
+                    android:id="@+id/tv_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+
+
+                    android:shadowColor="#80000000"
+                    android:text="Dashboard"
+                    android:textColor="@color/black"
+                    android:textSize="21sp" />
+
+
+                <ImageView
+                    android:id="@+id/img_online_indicator"
+                    android:layout_width="10sp"
+                    android:layout_height="10sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="6.1dp"
+                    android:layout_toLeftOf="@id/tvNetworkStatus"
+                    android:src="@drawable/green_dot"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvNetworkStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:text="Online"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="20dp"
+            android:background="#F5F5F5"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kredily Live Tracking"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:paddingBottom="20dp"/>
+
+
+
+            <TextView
+                android:id="@+id/tvPending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pending Offline Logs: 0"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:paddingTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tvLastUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Update ID: --"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvSynced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Synced Logs: 0"
+                android:textSize="16sp"
+                android:textColor="#2E7D32"
+                android:paddingTop="8dp"/>
+
+
+            <TextView
+                android:id="@+id/tvTrackingStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Tracking Status: --"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <Button
+
+
+                    android:id="@+id/btnStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="START TRACKING"
+                    android:layout_above="@id/btnStop"
+                    android:textColor="#FFFFFF"
+                    android:elevation="2sp"
+                    android:background="@drawable/bg_button"
+
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    />
+
+                <Button
+                    android:id="@+id/btnStop"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="STOP TRACKING"
+                   android:layout_alignParentBottom="true"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="@dimen/_60sdp"
+                    android:elevation="2sp"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/bg_button"/>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
